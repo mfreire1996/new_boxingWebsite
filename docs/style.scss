@@ -33,10 +33,11 @@ a {
   margin-bottom: 10rem;
 
   img {
-    width: 50rem;
-    margin-left: 22.5%;
-    margin-top: 15rem;
-    margin-bottom: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25rem;
+    width: 40%;
     // animation: hero-image 1s ease-in-out;
   }
 
@@ -48,35 +49,32 @@ a {
 
 @media only screen and (max-width: 1150px) {
   .logo {
-    // display: flex;
-    // flex-direction: column;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    position: relative;
 
-    img {
-      width: 25rem;
-      margin-left: 0%;
-    }
+  img {
+
+  }
   }
 }
 
 @media only screen and (max-width: 900px) {
   .logo {
-    // display: flex;
-    // flex-direction: column;
-    align-content: center;
-    text-align: center;
-    justify-content: center;
-    position: relative;
 
-    img {
-      width: 22.5rem;
-      margin-left: 0%;
-    }
+  img {
+    
+  }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .logo {
+
+  img {
+    width: 22.5rem;
+  }
+  }
+}
+
+
 
 .description {
   display: flex;
@@ -248,6 +246,34 @@ a {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .about-us {
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    padding-bottom: 5rem;
+    margin-top: 20rem;
+  }
+
+  .about-description {
+    position: absolute;
+    margin-top: 18.7rem;
+    left: 0%;
+    color: $white;
+    padding: 5rem;
+    width: 100%;
+    line-height: 1.6;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // position: relative;
+    width: 100%;
+  }
+}
+
 .lessons {
   color: $white;
   max-width: 75%;
@@ -297,6 +323,13 @@ a {
       width: 100%;
       // margin-top: 25rem;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .lessons {
+    padding-bottom: 0rem;
+    bottom: 5rem;
   }
 }
 
@@ -350,6 +383,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .sparring {
+    padding-bottom: 5rem;
+  }
+}
+
 // profile section
 
 .container {
@@ -362,11 +401,11 @@ a {
   font-size: 60px;
   color: $darkColor;
   margin-left: 5.5rem;
-}
 
-.heading span {
-  font-style: italic;
-  font-size: 30px;
+  span {
+    font-style: italic;
+    font-size: 30px;
+  }
 }
 
 .profiles {
@@ -380,11 +419,19 @@ a {
   flex-basis: 33%;
   margin-bottom: 2rem;
   line-height: 1.6;
+
+  p {
+    max-width: 80%;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: $darkColor;
+  }
 }
 
-.profile p {
-  max-width: 80%;
-}
 
 .profile .profile-img {
   height: 260px;
@@ -402,13 +449,6 @@ a {
 .user-name {
   margin-top: 30px;
   font-size: 35px;
-}
-
-.profile h5 {
-  font-size: 18px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  color: $darkColor;
 }
 
 // #modal-animation {
@@ -447,6 +487,9 @@ a {
     font-size: 40px;
     color: $darkColor;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .heading span {
@@ -521,7 +564,7 @@ a {
 @media only screen and (max-width: 700px) {
   .flex-boxes {
     ul {
-      margin-top: 15rem;
+      margin-top: 20rem;
     }
   }
 }
@@ -555,6 +598,3 @@ a {
     color: $redColor;
   }
 }
-
-// .social-media {
-// }
