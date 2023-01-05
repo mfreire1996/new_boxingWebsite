@@ -127,6 +127,79 @@ a {
     transform: rotateX(360deg);
   }
 }
+.form {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
+  line-height: 3;
+  background: #ffffff;
+  width: 50%;
+  padding: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form input {
+  border: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-bottom: 3px solid rgba(205, 205, 205, 0.8274509804);
+}
+.form input:focus {
+  outline: none;
+}
+.form input:focus::-moz-placeholder {
+  color: #212f3d;
+  -moz-transition: 0.2s line ease-in;
+  transition: 0.2s line ease-in;
+}
+.form input:focus:-ms-input-placeholder {
+  color: #212f3d;
+  -ms-transition: 0.2s line ease-in;
+  transition: 0.2s line ease-in;
+}
+.form input:focus::placeholder {
+  color: #212f3d;
+  transition: 0.2s line ease-in;
+}
+.form .left-underline {
+  border-bottom: 3px solid hsl(2deg, 100%, 50%);
+  width: 0%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  transition: ease-in;
+  transition: all 0.2s linear;
+}
+.form .left:focus + .left-underline {
+  width: 100%;
+}
+.form .button {
+  background-color: hsl(2deg, 100%, 50%);
+  color: #ffffff;
+  display: inline-block;
+  padding: 1.5em 1.2em;
+  border-radius: 2em;
+  border: none;
+  text-align: center;
+  margin: 0 0.1em 0.1em 0;
+  margin-top: 1.5rem;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  transition: all 0.2s;
+}
+.form .button:hover {
+  background-color: hsl(2deg, 100%, 45%);
+  color: black;
+}
+@media only screen and (max-width: 950px) {
+  .form .button {
+    display: block;
+    padding: 1em 1.2em;
+    margin: 1em auto;
+  }
+}
+
 .container-2 {
   margin: 20px 40px;
 }
@@ -175,7 +248,7 @@ a {
 }
 
 .about-description {
-  background: #ff0800;
+  background: hsl(2deg, 100%, 50%);
   position: absolute;
   width: 50%;
   padding: 6rem;
@@ -293,7 +366,7 @@ a {
 }
 
 .sparring-description {
-  background: #ff0800;
+  background: hsl(2deg, 100%, 50%);
   position: absolute;
   width: 50%;
   padding: 6rem;
@@ -306,7 +379,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20rem;
+    margin-top: 10rem;
   }
   .sparring .sparring-description {
     position: absolute;
@@ -371,13 +444,13 @@ a {
   height: 260px;
   width: 260px;
   border-radius: 50%;
-  filter: grayscale(100%);
+  filter: grayscale(0);
   cursor: pointer;
   transition: 400ms;
 }
 
 .profile:hover .profile-img {
-  filter: grayscale(0);
+  filter: grayscale(100%);
 }
 
 .user-name {
@@ -463,7 +536,7 @@ a {
 }
 @media only screen and (max-width: 700px) {
   .flex-boxes ul {
-    margin-top: 20rem;
+    margin-top: 22.5rem;
   }
 }
 .footer {
@@ -489,5 +562,5 @@ a {
   opacity: 1;
 }
 .footer b {
-  color: #ff0800;
+  color: hsl(2deg, 100%, 50%);
 }/*# sourceMappingURL=style.css.map */
